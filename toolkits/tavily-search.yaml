@@ -1,0 +1,14 @@
+kind: mcp
+name: tavily-search
+description: 'Tavily AI-powered web search toolkit. Provides real-time web search
+  and content extraction capabilities. Use for threat intelligence enrichment, CVE
+  lookups, malware analysis, IP reputation research, and any web research needed during
+  SOC triage investigations.
+
+  '
+connections: []
+transport: streamable_http
+url: https://mcp.tavily.com/mcp/?tavilyApiKey=YOUR_TAVILY_API_KEY
+tools:
+- '*'
+spec_version: v1

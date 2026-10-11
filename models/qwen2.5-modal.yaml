@@ -1,0 +1,17 @@
+spec_version: v1
+kind: model
+name: virtual-model/openai/Qwen/Qwen2.5-7B-Instruct
+display_name: Qwen 2.5 7B Instruct (vLLM on Modal)
+description: |
+  Qwen 2.5 7B Instruct hosted via vLLM on Modal serverless GPU with OpenAI-compatible API and tool-calling support.
+tags:
+  - qwen
+  - modal
+  - vllm
+model_type: chat
+provider_config:
+  custom_host: https://aditya-krishnan28--vllm-qwen-orchestrate-serve.modal.run/v1
+config:
+  max_completion_tokens: 1500
+  temperature: 0.0
+  seed: 123

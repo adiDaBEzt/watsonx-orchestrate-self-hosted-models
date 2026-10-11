@@ -1,0 +1,22 @@
+spec_version: v1
+kind: model
+name: virtual-model/openai/Qwen/Qwen2.5-7B-Instruct
+display_name: Qwen 2.5 7B Instruct (vLLM On-Prem)
+description: |
+  On-prem self-hosted Qwen 2.5 7B Instruct model served via vLLM with OpenAI-compatible API and native tool-calling.
+tags:
+  - qwen
+  - on-prem
+  - default  # Include 'default' if you want this to be the default LLM in an on-prem Orchestrate tenant
+model_type: chat
+provider_config:
+  # Base URL of your on-prem vLLM server.
+  # IMPORTANT: Do NOT include '/chat/completions'. Orchestrate appends it automatically.
+  # Use host network IP or DNS (avoid localhost if Orchestrate runs in Docker).
+  custom_host: http://192.168.1.50:8000/v1
+  api_key: "your-api-key"   # Can be specified here or dynamically via '--app-id' connection
+  response_timeout: 120
+config:
+  max_completion_tokens: 4096
+  temperature: 0.0
+  seed: 123

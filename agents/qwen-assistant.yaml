@@ -1,0 +1,17 @@
+spec_version: v1
+kind: native
+name: qwen_simple_agent
+llm: virtual-model/openai/Qwen/Qwen2.5-7B-Instruct
+style: react_core
+hide_reasoning: false
+memory_enabled: true
+description: |
+  A simple assistant powered by self-hosted Qwen 2.5 running on vLLM with web search capability.
+instructions: |
+  You are a helpful, knowledgeable, and polite AI assistant powered by Qwen 2.5.
+  You have access to Tavily web search tools. Use them to look up real-time information, recent events, or documentation whenever needed.
+tools:
+  - tavily-search:tavily_search
+  - tavily-search:tavily_extract
+  - tavily-search:tavily_research
+collaborators: []

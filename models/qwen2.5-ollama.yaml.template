@@ -1,0 +1,17 @@
+spec_version: v1
+kind: model
+name: virtual-model/ollama/qwen2.5:7b
+display_name: Qwen 2.5 7B (Ollama on Modal)
+description: |
+  Qwen 2.5 7B model served via Ollama on Modal serverless GPU with native tool-calling support.
+tags:
+  - qwen
+  - ollama
+  - modal
+model_type: chat
+provider_config:
+  custom_host: ${OLLAMA_HOST_URL}
+  api_key: ollama
+config:
+  max_completion_tokens: 4096
+  temperature: 0.0
