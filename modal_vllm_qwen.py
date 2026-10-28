@@ -23,7 +23,7 @@ vllm_image = (
 
 @app.function(
     image=vllm_image,
-    gpu="L4",
+    gpu=["A10G", "L4"],
     timeout=600,
     scaledown_window=300,
     volumes={"/root/.cache/huggingface": hf_cache},
