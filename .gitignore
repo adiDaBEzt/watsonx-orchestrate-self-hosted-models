@@ -45,3 +45,5 @@ tavily-toolkit.zip
 *.log
 bean-and-brew-wxo/
 bob_audit_dashboard/
+toolkits/tavily-search.yaml
+!toolkits/tavily-search.yaml.template

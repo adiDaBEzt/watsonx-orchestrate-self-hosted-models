@@ -11,6 +11,7 @@ tags:
 model_type: chat
 provider_config:
   custom_host: https://aditya-krishnan28--vllm-qwen-orchestrate-serve.modal.run/v1
+  api_key: "qwen-orchestrate-token"
 config:
   max_completion_tokens: 1500
   temperature: 0.0
